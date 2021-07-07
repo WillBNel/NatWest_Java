@@ -1,4 +1,4 @@
-package com.qa.calculator;
+package com.NatWest.Calculator;
 
 public class Runner {
 
@@ -26,5 +26,4 @@ public class Runner {
 	}
 		
 	}
-	
 
