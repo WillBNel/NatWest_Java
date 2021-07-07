@@ -2,7 +2,7 @@ package com.qa.classmembers;
 
 public class Runner {
 	
-	public static void main(String) 
+	
 
 	public static String fName;
 	public static int age;
