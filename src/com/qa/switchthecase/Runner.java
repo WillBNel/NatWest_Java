@@ -3,28 +3,31 @@ package com.qa.switchthecase;
 public class Runner {
 
 	public static void main(String[] args) {
-		int day = 1;
+		String day = "Wed";
 
 		switch (day) {
-		case 1:
+		case "Monday":
 			System.out.println("Monday you can fall apart");
 			break;
-		case 2:
+		case "Tuesday":
 			System.out.println("Tuesday,");
 			break;
-		case 3:
+		case "VinsDay":
+			System.out.println("Its Vins Day!!!!!");
+			break;
+		case "Wed":
 			System.out.println("Wednesday break my heart");
 			break;
-		case 4:
+		case "thurs":
 			System.out.println("Oh, Thursday doesn't even start");
 			break;
-		case 5:
+		case "Fri":
 			System.out.println("It's Friday I'm in love");
 			break;
-		case 6:
+		case "Sat":
 			System.out.println("Saturdaaaay wait");
 			break;
-		case 7:
+		case "Sun":
 			System.out.println("Sunday always comes too late");
 			break;
 		default:
@@ -32,23 +35,23 @@ public class Runner {
 			break;
 		}
 
-		if (day == 1) {
-			System.out.println("M");
-		} else if (day == 2) {
-			System.out.println("Tues");
-		} else if (day == 3) {
-			System.out.println("wed");
-		} else if (day == 4) {
-			System.out.println("thurs");
-		} else if (day == 5) {
-			System.out.println("fri");
-		} else if (day == 6) {
-			System.out.println("sat");
-		} else if (day == 7) {
-			System.out.println("sun");
-		} else {
-			System.out.println("listen to the cure");
-		}
+//		if (day == 1) {
+//			System.out.println("M");
+//		} else if (day == 2) {
+//			System.out.println("Tues");
+//		} else if (day == 3) {
+//			System.out.println("wed");
+//		} else if (day == 4) {
+//			System.out.println("thurs");
+//		} else if (day == 5) {
+//			System.out.println("fri");
+//		} else if (day == 6) {
+//			System.out.println("sat");
+//		} else if (day == 7) {
+//			System.out.println("sun");
+//		} else {
+//			System.out.println("listen to the cure");
+//		}
 
 	}
 
