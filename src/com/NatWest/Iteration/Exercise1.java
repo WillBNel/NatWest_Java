@@ -1,7 +1,6 @@
 package com.NatWest.Iteration;
 
-public class Flowcharts {
-	
+public class Exercise1 {
 	public static void main(String[] args) {
 
 //		int valA = 100;
@@ -16,11 +15,13 @@ public class Flowcharts {
 //}
 //}
 		
-		for (int i = 100; i  < 200; i++) {
-			if (i == 200) {
-				break;
-			}
-			System.out.println("A");
+		for (int A = 100; A  < 200; A++) {
+//			if (A == 200) {
+//				break;
+//			}
+			System.out.println("A"+A);
 	}
+		System.out.println("-----------------------------------------------");
 }
 }
+
