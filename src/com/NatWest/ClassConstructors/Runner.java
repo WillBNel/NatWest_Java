@@ -1,6 +1,5 @@
 package com.NatWest.ClassConstructors;
 
-import java.util.ArrayList;
 
 public class Runner {
 
@@ -21,13 +20,13 @@ public class Runner {
 		System.out.println(pers3);
 		System.out.println(pers4);
 		System.out.println(pers5);
-		
-		ArrayList<Person> listOfPerson= new ArrayList<>();
-		listOfPerson.add(pers1);
-		listOfPerson.add(pers2);
-		listOfPerson.add(pers3);
-		listOfPerson.add(pers4);
-		listOfPerson.add(pers5);
+//		
+//		ArrayList<Person> listOfPerson= new ArrayList<>();
+//		listOfPerson.add(pers1);
+//		listOfPerson.add(pers2);
+//		listOfPerson.add(pers3);
+//		listOfPerson.add(pers4);
+//		listOfPerson.add(pers5);
 			
 }
 	

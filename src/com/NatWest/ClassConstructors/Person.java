@@ -7,7 +7,7 @@ public class Person {
 	private int age;
 	private String job_title;
 	
-	private ArrayList<Person> listOfPerson = new ArrayList<>();
+	//private ArrayList<Person> listOfPerson = new ArrayList<>();
 
 	public Person(String name, int age, String job_title) {
 		this.name = name;
