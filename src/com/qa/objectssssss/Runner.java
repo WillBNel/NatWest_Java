@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Runner {
 
 	public static void main(String[] args) {
+
+		// calling methods and making objects
+
 //		ArrayList<String> myList = new ArrayList<>();
 		// Instance of Car
 		Car vinsCar = new Car("Audi", "A7", "W8M8");
