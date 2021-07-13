@@ -32,6 +32,10 @@ public class Runner {
 //			System.out.println(i);
 		}
 
+		// Your task is a bank account task - create a customer
+//		we want method to allow you check balance
+//		deposit money 
+//		withdraw money
 	}
 
 }
