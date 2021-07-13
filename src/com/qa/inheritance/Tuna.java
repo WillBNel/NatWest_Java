@@ -15,13 +15,20 @@ public class Tuna extends Fish {
 	}
 
 	@Override
-	public void sleep() {
-		System.out.println("Tuna is sleeping");
+	public void eating() {
+		System.out.println("tnom tnom tnom");
 	}
 
 	@Override
-	public void eating() {
-		System.out.println("tnom tnom tnom");
+	public void eyes() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void sleep() {
+		System.out.println("tuna sleep mmm mmm mmm ");
+
 	}
 
 }

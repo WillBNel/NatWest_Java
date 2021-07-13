@@ -1,6 +1,6 @@
 package com.qa.inheritance;
 
-public class Animal {
+public abstract class Animal {
 	// class member should be at the top
 
 	private String name;
@@ -9,6 +9,17 @@ public class Animal {
 
 	public Animal() {
 		super();
+	}
+
+	public Animal(String name) {
+		super();
+		this.name = name;
+	}
+
+	public Animal(String name, String colour) {
+		super();
+		this.name = name;
+		this.colour = colour;
 	}
 
 	public Animal(String name, String colour, double weight) {
@@ -47,13 +58,16 @@ public class Animal {
 		return "Animal [name=" + name + ", colour=" + colour + ", weight=" + weight + "]";
 	}
 
-	public void sleep() {
-		System.out.println("animal sleeping");
-	}
+	public abstract void sleep();
 
 	public void eating() {
-		System.out.println("nom nom nom");
+		System.out.println("Animal nom nom nom");
 	}
+
+	// visability modifiers - Public, private, protectd and default
+	// METHOD WITH NO BODY
+	// VOID - ITS THE RETURN TYPE
+	public abstract void eyes();
 
 	// G
 	// S

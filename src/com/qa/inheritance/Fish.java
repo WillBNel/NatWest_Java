@@ -1,6 +1,6 @@
 package com.qa.inheritance;
 
-public class Fish extends Animal {
+public abstract class Fish extends Animal {
 
 	public int numberOfFins;
 	public boolean livesInTheWater;
@@ -40,11 +40,6 @@ public class Fish extends Animal {
 
 	public void setFreshWater(boolean freshWater) {
 		this.freshWater = freshWater;
-	}
-
-	@Override
-	public void sleep() {
-		System.out.println("Fish is sleeping");
 	}
 
 }
