@@ -3,7 +3,7 @@ package com.qa.switchthecase;
 public class Runner {
 
 	public static void main(String[] args) {
-		String day = "Wed";
+		String day = "";
 
 		switch (day) {
 		case "Monday":
