@@ -1,4 +1,4 @@
-package com.natwest.demo.domain;
+package com.natwest.demo.persistence.domain;
 
 import java.util.Objects;
 
