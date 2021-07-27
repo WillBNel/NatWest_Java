@@ -1,12 +1,11 @@
-package domain;
-
+package com.natwest.exercises.persistence.domain;
 
 import java.util.Objects;
 
 import javax.persistence.*;
 
 @Entity
-public class FruitDomain {
+public class Fruit {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,19 +14,19 @@ public class FruitDomain {
 	private int amount;
 	private String colour;
 
-	public FruitDomain() {
+	public Fruit() {
 		super();
-		
+
 	}
 
-	public FruitDomain(String type, int amount, String colour) {
+	public Fruit(String type, int amount, String colour) {
 		super();
 		this.type = type;
 		this.amount = amount;
 		this.colour = colour;
 	}
 
-	public FruitDomain(Long id, String type, int amount, String colour) {
+	public Fruit(Long id, String type, int amount, String colour) {
 		super();
 		Id = id;
 		this.type = type;
@@ -85,15 +84,9 @@ public class FruitDomain {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		FruitDomain other = (FruitDomain) obj;
+		Fruit other = (Fruit) obj;
 		return Objects.equals(Id, other.Id) && amount == other.amount && Objects.equals(colour, other.colour)
 				&& Objects.equals(type, other.type);
 	}
-	
-	
-	
-
-	
-
 
 }
