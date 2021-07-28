@@ -13,7 +13,7 @@ public class NatWestSpringApplication {
 		//SpringApplication.run(NatWestSpringApplication.class, args);
 		ApplicationContext ac = SpringApplication.run(NatWestSpringApplication.class, args);
 		FruitRepo repo = ac.getBean(FruitRepo.class);
-		System.out.println(repo.findByType("Apple"));
+		System.out.println(repo.findFruitByTypeJPQL("Apple"));
 	}
 
 	

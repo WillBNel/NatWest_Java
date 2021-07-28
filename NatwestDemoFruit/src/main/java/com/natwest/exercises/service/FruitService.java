@@ -41,6 +41,7 @@ public class FruitService {
 		exists.setType(fruit.getType());
 		exists.setAmount(fruit.getAmount());
 		exists.setColour(fruit.getColour());
+		exists.setPrice(fruit.getPrice());
 		Fruit updated = this.repo.save(exists);
 		return updated;
 	}
@@ -53,7 +54,7 @@ public class FruitService {
 	}
 	//select option
 	public List<Fruit> findByType(String type) {
-		return this.repo.findByType(type);
+		return this.repo.findFruitByTypeJPQL(type);
 		
 	}
 }
