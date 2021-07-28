@@ -51,5 +51,9 @@ public class FruitService {
 		return this.repo.existsById(id);
 		
 	}
-	
+	//select option
+	public List<Fruit> findByType(String type) {
+		return this.repo.findByType(type);
+		
+	}
 }

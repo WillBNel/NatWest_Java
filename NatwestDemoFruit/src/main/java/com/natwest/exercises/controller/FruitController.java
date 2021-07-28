@@ -43,9 +43,15 @@ public class FruitController {
 		return new ResponseEntity<Fruit>(this.service.update(id, fruit), HttpStatus.ACCEPTED);
 	}
 	
-	@DeleteMapping("delete/{id}")
+	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<Boolean> delete(@PathVariable Long id) {
 		return new ResponseEntity<Boolean>(this.service.delete(id), HttpStatus.NO_CONTENT);
+	}
+	
+	@GetMapping("/findByType/{type}")
+	public ResponseEntity<List<Fruit>> findByType(@PathVariable String type){
+		return new ResponseEntity<List<Fruit>>(this.service.findByType(type), HttpStatus.OK);
+		
 	}
 	
 }
