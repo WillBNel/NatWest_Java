@@ -66,7 +66,3 @@
 // let condition = 6;
 // console.log(condition === 6 ? `True` : `False`); //  better performance but stick to if/else
 
-
-
-
-
