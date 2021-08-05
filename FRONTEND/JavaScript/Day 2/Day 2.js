@@ -285,7 +285,7 @@
 //   alert( `Hello, ${name}` );
 // }
 
-let hello = () => "Hello World!";
+// hello = () => "Hello World!";
 // console.log(hello);
 // hello = (name, age) => "Hello " + name +"! You are "+ age +" years old!";
 // console.log(hello("Will", 34));

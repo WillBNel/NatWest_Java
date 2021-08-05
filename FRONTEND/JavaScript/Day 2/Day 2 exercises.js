@@ -23,7 +23,7 @@
 // }
 
 
-// Functions
+//! Functions
 // Exercise 1
 // function subT (num1, num2) {
 //     return num1 - num2;
@@ -34,6 +34,21 @@
 // welcome = (name, age, gender) => "My name is " + name + ", I am "+ age +" years old and of "+ gender +".";
 // console.log(welcome("Felix Cited", 20, "Male"));
 
+// Exercise 3
+// const powerup = (n1, n2) => Math.pow(n1,n2);
+// console.log(powerup(3,3));
 
+//! Destructuring
+const user = {
+    name: "Billy",
+    years: 35
+};
+
+let {name, years : age, isAdmin = false} = user;
+
+// alert(`This is ` + name);
+// alert(`He is `+ age +` years old.`);
+// alert(`Is he admin = ` + isAdmin);
+//console.log(`This is ${name}, he is ${age} years old.`);
 
 
