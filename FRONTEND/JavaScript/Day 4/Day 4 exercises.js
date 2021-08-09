@@ -137,28 +137,28 @@ header.addEventListener(`click`, () => {
 //   .catch(error => console.error(`Request failed ${error}`));
 
 //! Use this!!!!!
-// function fetchData() {
+function fetchData() {
  
-//     fetch("https://reqres.in/api/users?page=2")
-//         .then(response => {
-//             if (!response.ok) {
-//                 throw Error("Error");
-//             }
-//             return response.json();
-//         })
-//         .then(data => {
-//             console.log(data.data);
-//             const html = data.data
-//                 .map(user => {
-//                     return `<p>Email: ${user.email}</p>`;
-//                 })
-//                 .join("");
-//             console.log(html);
-//             document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
-//         })
-//         .catch(error => {
-//             console / log(error);
-//         })
-// }
+    fetch("https://reqres.in/api/users?page=2")
+        .then(response => {
+            if (!response.ok) {
+                throw Error("Error");
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data.data);
+            const html = data.data
+                .map(user => {
+                    return `<p>Email: ${user.email}</p>`;
+                })
+                .join("");
+            console.log(html);
+            document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
+        })
+        .catch(error => {
+            console / log(error);
+        })
+}
  
-// fetchData();
+fetchData();

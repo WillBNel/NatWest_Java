@@ -19,7 +19,6 @@ public interface FruitRepo extends JpaRepository<Fruit, Long> {
 	List<Fruit> findAllSQL();
 	
 	
-
 	@Query(value = "SELECT f from Fruit f WHERE f.price > ?1")
 	List<Fruit> findFruitByPriceGreaterThanJPQL(double price);
 
