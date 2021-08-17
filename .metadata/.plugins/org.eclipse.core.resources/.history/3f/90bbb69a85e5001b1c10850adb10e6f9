@@ -1,0 +1,12 @@
+package Cars;
+
+public class Driver {
+	
+	private int mileage;
+	
+	public void drive(String milesDriven) {
+		this.setMileage(this.getMileage() + milesDriven);
+		
+	}
+	
+}

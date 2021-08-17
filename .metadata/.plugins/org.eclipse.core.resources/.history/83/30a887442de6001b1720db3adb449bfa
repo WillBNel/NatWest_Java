@@ -1,0 +1,68 @@
+package tempreturetest;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import tempreture.TempCon;
+
+public class TempConTest {
+
+	TempCon temp = new TempCon();
+
+	@BeforeClass
+	public static void init() {
+		System.out.println("Before All Test");
+	}
+
+	@Test
+	public void testFahrenheitToCelsius() {
+		System.out.println("First Test");
+
+		assertEquals(-12, temp.convertFahrenheitToCelsius(10), 2);
+
+	}
+
+	@Test
+	public void testCelsiusToFahrenheit() {
+		System.out.println("Second Test");
+
+		assertEquals(111.2, temp.convertCelsiusToFahrenheit(44), 2);
+
+	}
+
+	@Test
+	public void testKelvinToCelsius() {
+		System.out.println("Third Test");
+
+		assertEquals(111.2, temp.convertKelvinToCelsius(25), 2);
+
+	}
+
+	@Test
+	public void testCelsiusToKelvin() {
+		System.out.println("Forth Test");
+
+		assertEquals(111.2, temp.convertCelsiusToKelvin(60), 2);
+
+	}
+
+	@Test
+	public void testKelvinToFahrenheit() {
+		System.out.println("Fifth Test");
+
+		assertEquals(111.2, temp.convertKelvinToFahrenheit(15), 2);
+
+	}
+
+	@Test
+	public void testFahrenheitToKelvin() {
+		System.out.println("Sixth Test");
+
+		assertEquals(111.2, temp.convertFahrenheitToKelvin(32), 2);
+
+	}
+
+}

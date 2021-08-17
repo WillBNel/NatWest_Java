@@ -1,0 +1,47 @@
+package Cars;
+
+public class Car {
+	
+	private String colour;
+	private String model;
+	private int milage;
+	
+	public Car(String colour, String moderl, int milage) {
+		super();
+		this.colour = colour;
+		this.model = model;
+		this.milage = milage;
+	}
+
+	public String getColour() {
+		return colour;
+	}
+
+	public void setColour(String colour) {
+		this.colour = colour;
+	}
+
+	public String getModerl() {
+		return model;
+	}
+
+	public void setModerl(String model) {
+		this.model = model;
+	}
+
+	public int getMilage() {
+		return milage;
+	}
+
+	public void setMilage(int milage) {
+		this.milage = milage;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [colour=" + colour + ", moderl=" + model + ", milage=" + milage + "]";
+	}
+	
+	
+
+}
